@@ -1,4 +1,7 @@
 WCFastCell
 ==========
 
-A drop-in replacement for UITableViewCell. Seamless integration with nibs
+#What it is?
+
+
+#What it isn't?
