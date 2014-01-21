@@ -1,3 +1,5 @@
+platform :ios
+
 pod "WCFastCell", :path => "../WCFastCell.podspec"
 
 target "Demo" do

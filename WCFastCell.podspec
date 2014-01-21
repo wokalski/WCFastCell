@@ -6,31 +6,24 @@
 #
 Pod::Spec.new do |s|
   s.name         = "WCFastCell"
-  s.version      = "0.1.0"
-  s.summary      = "A short description of WCFastCell."
+  s.version      = "0.9"
+  s.summary      = "A faster drop-in replacement for UITableViewCell. Seamless integration with nibs"
   s.description  = <<-DESC
-                    An optional longer description of WCFastCell
+                    WCFastCell automatically draws all UILabels and UIImageViews using Core Graphics providing a better performance on older devices.
 
                     * Markdown format.
                     * Don't worry about the indent, we strip it!
                    DESC
-  s.homepage     = "http://EXAMPLE/NAME"
-  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage     = "http://github.com/wczekalski/WCFastCell"
   s.license      = 'MIT'
-  s.author       = { "wczekalski" => "wczekalski@me.com" }
-  s.source       = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.author       = { "Wojtek Czekalski (wczekalski)" => "me@wczekalski.com" }
+  s.source       = { :git => "https://github.com/wczekalski/WCFastCell.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  s.resources = 'Assets'
 
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.public_header_files = 'Classes/**/*.h'
+  s.frameworks = 'CoreGraphics', 'UIKit', 'Foundation'
 end
