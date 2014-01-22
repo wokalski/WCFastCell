@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C957F1B5188EFF8F00FDD210 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C957F1B4188EFF8F00FDD210 /* Reveal.framework */; };
 		C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */; };
-		C96FFC06188EDDA90075A1EF /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFBFE188EDDA90075A1EF /* WCFastCell.m */; };
-		C96FFC07188EDDA90075A1EF /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFC01188EDDA90075A1EF /* WCFCImageView.m */; };
-		C96FFC08188EDDA90075A1EF /* WCFCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFC03188EDDA90075A1EF /* WCFCLabel.m */; };
-		C96FFC09188EDDA90075A1EF /* WCFCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFC05188EDDA90075A1EF /* WCFCObject.m */; };
+		C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B1188FFB67009FCD18 /* WCFastCell.m */; };
+		C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B4188FFB67009FCD18 /* WCFCImageView.m */; };
+		C98A27BB188FFB67009FCD18 /* WCFCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B6188FFB67009FCD18 /* WCFCLabel.m */; };
+		C98A27BC188FFB67009FCD18 /* WCFCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B8188FFB67009FCD18 /* WCFCObject.m */; };
+		C98A27BE188FFBA7009FCD18 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98A27BD188FFBA7009FCD18 /* Reveal.framework */; };
 		C9E9D19E188EB98F007EC932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9D19D188EB98F007EC932 /* Foundation.framework */; };
 		C9E9D1A0188EB98F007EC932 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9D19F188EB98F007EC932 /* CoreGraphics.framework */; };
 		C9E9D1A2188EB98F007EC932 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9D1A1188EB98F007EC932 /* UIKit.framework */; };
@@ -45,18 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C957F1B4188EFF8F00FDD210 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomString.h"; sourceTree = "<group>"; };
 		C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomString.m"; sourceTree = "<group>"; };
-		C96FFBFD188EDDA90075A1EF /* WCFastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCell.h; path = ../../../Classes/ios/WCFastCell.h; sourceTree = "<group>"; };
-		C96FFBFE188EDDA90075A1EF /* WCFastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCell.m; path = ../../../Classes/ios/WCFastCell.m; sourceTree = "<group>"; };
-		C96FFBFF188EDDA90075A1EF /* WCFastCell+PrivateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WCFastCell+PrivateAdditions.h"; path = "../../../Classes/ios/WCFastCell+PrivateAdditions.h"; sourceTree = "<group>"; };
-		C96FFC00188EDDA90075A1EF /* WCFCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCImageView.h; path = ../../../Classes/ios/WCFCImageView.h; sourceTree = "<group>"; };
-		C96FFC01188EDDA90075A1EF /* WCFCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCImageView.m; path = ../../../Classes/ios/WCFCImageView.m; sourceTree = "<group>"; };
-		C96FFC02188EDDA90075A1EF /* WCFCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCLabel.h; path = ../../../Classes/ios/WCFCLabel.h; sourceTree = "<group>"; };
-		C96FFC03188EDDA90075A1EF /* WCFCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCLabel.m; path = ../../../Classes/ios/WCFCLabel.m; sourceTree = "<group>"; };
-		C96FFC04188EDDA90075A1EF /* WCFCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCObject.h; path = ../../../Classes/ios/WCFCObject.h; sourceTree = "<group>"; };
-		C96FFC05188EDDA90075A1EF /* WCFCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCObject.m; path = ../../../Classes/ios/WCFCObject.m; sourceTree = "<group>"; };
+		C98A27B0188FFB67009FCD18 /* WCFastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCell.h; path = ../../Classes/ios/WCFastCell.h; sourceTree = "<group>"; };
+		C98A27B1188FFB67009FCD18 /* WCFastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCell.m; path = ../../Classes/ios/WCFastCell.m; sourceTree = "<group>"; };
+		C98A27B2188FFB67009FCD18 /* WCFastCell+PrivateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WCFastCell+PrivateAdditions.h"; path = "../../Classes/ios/WCFastCell+PrivateAdditions.h"; sourceTree = "<group>"; };
+		C98A27B3188FFB67009FCD18 /* WCFCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCImageView.h; path = ../../Classes/ios/WCFCImageView.h; sourceTree = "<group>"; };
+		C98A27B4188FFB67009FCD18 /* WCFCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCImageView.m; path = ../../Classes/ios/WCFCImageView.m; sourceTree = "<group>"; };
+		C98A27B5188FFB67009FCD18 /* WCFCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCLabel.h; path = ../../Classes/ios/WCFCLabel.h; sourceTree = "<group>"; };
+		C98A27B6188FFB67009FCD18 /* WCFCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCLabel.m; path = ../../Classes/ios/WCFCLabel.m; sourceTree = "<group>"; };
+		C98A27B7188FFB67009FCD18 /* WCFCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFCObject.h; path = ../../Classes/ios/WCFCObject.h; sourceTree = "<group>"; };
+		C98A27B8188FFB67009FCD18 /* WCFCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFCObject.m; path = ../../Classes/ios/WCFCObject.m; sourceTree = "<group>"; };
+		C98A27BD188FFBA7009FCD18 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		C9E9D19A188EB98F007EC932 /* WCFastCellTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCFastCellTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E9D19D188EB98F007EC932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9E9D19F188EB98F007EC932 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,7 +94,7 @@
 				C9E9D1A0188EB98F007EC932 /* CoreGraphics.framework in Frameworks */,
 				C9E9D1A2188EB98F007EC932 /* UIKit.framework in Frameworks */,
 				C9E9D19E188EB98F007EC932 /* Foundation.framework in Frameworks */,
-				C957F1B5188EFF8F00FDD210 /* Reveal.framework in Frameworks */,
+				C98A27BE188FFBA7009FCD18 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 		C9E9D1A3188EB98F007EC932 /* WCFastCellTest */ = {
 			isa = PBXGroup;
 			children = (
-				C957F1B4188EFF8F00FDD210 /* Reveal.framework */,
+				C98A27BD188FFBA7009FCD18 /* Reveal.framework */,
 				C9E9D1AC188EB98F007EC932 /* TestAppDelegate.h */,
 				C9E9D1AD188EB98F007EC932 /* TestAppDelegate.m */,
 				C9E9D1AF188EB98F007EC932 /* Main.storyboard */,
@@ -199,15 +199,15 @@
 		C9E9D1E5188EBAF9007EC932 /* WCFastCell */ = {
 			isa = PBXGroup;
 			children = (
-				C96FFBFD188EDDA90075A1EF /* WCFastCell.h */,
-				C96FFBFE188EDDA90075A1EF /* WCFastCell.m */,
-				C96FFBFF188EDDA90075A1EF /* WCFastCell+PrivateAdditions.h */,
-				C96FFC00188EDDA90075A1EF /* WCFCImageView.h */,
-				C96FFC01188EDDA90075A1EF /* WCFCImageView.m */,
-				C96FFC02188EDDA90075A1EF /* WCFCLabel.h */,
-				C96FFC03188EDDA90075A1EF /* WCFCLabel.m */,
-				C96FFC04188EDDA90075A1EF /* WCFCObject.h */,
-				C96FFC05188EDDA90075A1EF /* WCFCObject.m */,
+				C98A27B0188FFB67009FCD18 /* WCFastCell.h */,
+				C98A27B1188FFB67009FCD18 /* WCFastCell.m */,
+				C98A27B2188FFB67009FCD18 /* WCFastCell+PrivateAdditions.h */,
+				C98A27B3188FFB67009FCD18 /* WCFCImageView.h */,
+				C98A27B4188FFB67009FCD18 /* WCFCImageView.m */,
+				C98A27B5188FFB67009FCD18 /* WCFCLabel.h */,
+				C98A27B6188FFB67009FCD18 /* WCFCLabel.m */,
+				C98A27B7188FFB67009FCD18 /* WCFCObject.h */,
+				C98A27B8188FFB67009FCD18 /* WCFCObject.m */,
 			);
 			name = WCFastCell;
 			sourceTree = "<group>";
@@ -316,12 +316,12 @@
 				C9E9D1AA188EB98F007EC932 /* main.m in Sources */,
 				C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */,
 				C9E9D1EF188EC14D007EC932 /* TestCellViewController.m in Sources */,
-				C96FFC09188EDDA90075A1EF /* WCFCObject.m in Sources */,
-				C96FFC08188EDDA90075A1EF /* WCFCLabel.m in Sources */,
+				C98A27BC188FFB67009FCD18 /* WCFCObject.m in Sources */,
+				C98A27BB188FFB67009FCD18 /* WCFCLabel.m in Sources */,
 				C9E9D1B4188EB98F007EC932 /* TestMasterViewController.m in Sources */,
 				C9E9D1E8188EBB2C007EC932 /* TestCell.m in Sources */,
-				C96FFC07188EDDA90075A1EF /* WCFCImageView.m in Sources */,
-				C96FFC06188EDDA90075A1EF /* WCFastCell.m in Sources */,
+				C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */,
+				C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */,
 				C9E9D1EC188EBFB9007EC932 /* WCTestCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +451,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wczekalski/Documents/iPhone\\ Development/Projekty/WCFastCell/Example/WCFastCellTest/WCFastCellTest",
+					"/Users/wczekalski/Documents/iPhone\\ Development/Projekty/WCFastCell/Example/WCFastCellTest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WCFastCellTest/WCFastCellTest-Prefix.pch";
@@ -473,7 +473,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wczekalski/Documents/iPhone\\ Development/Projekty/WCFastCell/Example/WCFastCellTest/WCFastCellTest",
+					"/Users/wczekalski/Documents/iPhone\\ Development/Projekty/WCFastCell/Example/WCFastCellTest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WCFastCellTest/WCFastCellTest-Prefix.pch";
