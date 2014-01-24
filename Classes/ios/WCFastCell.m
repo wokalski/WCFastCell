@@ -14,7 +14,7 @@
 @implementation WCFastCellDrawingLayerDelegate
 
 -(void) drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
-
+    
     UIGraphicsPushContext(ctx);
     for (WCFCObject *object in [self.cell objectsForLayer:layer]) {
         [object drawInContext:ctx];
@@ -51,7 +51,7 @@ static inline BOOL WCFCExchangeUIViewToCellObject(UIView *view, WCFastCell *cell
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateDisplay) name:@"wcfc_displayNeeded" object:nil];
     }
     return self;
 }
@@ -103,6 +103,8 @@ static inline BOOL WCFCExchangeUIViewToCellObject(UIView *view, WCFastCell *cell
     [self removeOccurenciesOfWCObjectsInView:self.contentView];
     self.drawingLayer.delegate = [self layerDelegate];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateDisplay) name:@"wcfc_displayNeeded" object:nil];
+    
     [self.contentView.layer addSublayer:self.drawingLayer];
 }
 
@@ -110,6 +112,10 @@ static inline BOOL WCFCExchangeUIViewToCellObject(UIView *view, WCFastCell *cell
 
 -(NSSet *) objectsForLayer:(CALayer *)layer {
     return self.objects;
+}
+
+-(void) updateDisplay {
+    [self.drawingLayer setNeedsDisplay];
 }
 
 #pragma mark - Instance methods
