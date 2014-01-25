@@ -48,11 +48,16 @@
     } else {
         [self.backgroundColor setFill];
         CGContextFillRect(ctx, self.frame);
-        
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
         NSDictionary *attributes = @{NSFontAttributeName: self.font, NSForegroundColorAttributeName : self.textColor, NSParagraphStyleAttributeName : self.paragraphStyle};
     
     [self.text drawInRect:self.frame withAttributes:attributes];
     }
+#else
+    [self.textColor set];
+    [self.text drawInRect:self.frame withFont:self.font lineBreakMode:[self.paragraphStyle lineBreakMode] alignment:[self.paragraphStyle alignment]];
+#endif
+    
     CGContextRestoreGState(ctx);
 }
 
