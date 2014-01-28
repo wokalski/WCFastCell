@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Wojtek Czekalski (wczekalski)" => "me@wczekalski.com" }
   s.source       = { :git => "https://github.com/wczekalski/WCFastCell.git", :tag => "1.2" }
 
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Classes/ios/*.{h,m}'
