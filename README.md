@@ -1,13 +1,17 @@
 WCFastCell
 ==========
 
+###What's new
 
+* UICollectionView support
+
+==========
 #####Cocoa pods
 <pre><code> pod 'WCFastCell'
 </code></pre>
 
 ###What it is?
-WCFastCell is a drop in replacement for UITableViewCell. It draws subviews' contents (either UILabels or UIImageViews) on a single layer. Thanks to that UITableViews scroll more smoothly. It can be especially useful on older devices.
+WCFastCell is a drop in replacement for UITableViewCell & UICollectionViewCells. It draws subviews' contents (either UILabels or UIImageViews) on a single layer. Thanks to that UITableViews & UICollectionViews scroll more smoothly. It can be especially useful on older devices.
 
 #### UITableViewCells vs WCFastCells
 ![](/UITableViewCell.tiff)
@@ -26,7 +30,7 @@ Just change the class of your UITableViewCell (or it's subclass) to WCFastCell (
 
 ###What it isn't?
 
-If you need to animate UITableViewCell's contents you should not use WCFastCell, but in other cases you are free to use it.
+If you need to animate cell's contents you should not use WCFastCell, but in other cases you are free to use it.
 
 ###License
 Copyright (c) 2013-2014 Wojciech Czekalski. All rights reserved.
