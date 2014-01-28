@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C918DD751897B70D00621806 /* WCFastCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD741897B70D00621806 /* WCFastCollectionViewCell.m */; };
+		C918DD781897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */; };
+		C918DD801897BA3400621806 /* WCFastCellCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD7F1897BA3400621806 /* WCFastCellCommon.m */; };
 		C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */; };
 		C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B1188FFB67009FCD18 /* WCFastCell.m */; };
 		C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B4188FFB67009FCD18 /* WCFCImageView.m */; };
@@ -44,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C918DD731897B70D00621806 /* WCFastCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCollectionViewCell.h; path = ../../Classes/ios/WCFastCollectionViewCell.h; sourceTree = "<group>"; };
+		C918DD741897B70D00621806 /* WCFastCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCollectionViewCell.m; path = ../../Classes/ios/WCFastCollectionViewCell.m; sourceTree = "<group>"; };
+		C918DD761897B7CA00621806 /* WCFastCellDrawingLayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCellDrawingLayerDelegate.h; path = ../../Classes/ios/WCFastCellDrawingLayerDelegate.h; sourceTree = "<group>"; };
+		C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCellDrawingLayerDelegate.m; path = ../../Classes/ios/WCFastCellDrawingLayerDelegate.m; sourceTree = "<group>"; };
+		C918DD7E1897BA3400621806 /* WCFastCellCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCellCommon.h; path = ../../Classes/ios/WCFastCellCommon.h; sourceTree = "<group>"; };
+		C918DD7F1897BA3400621806 /* WCFastCellCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCellCommon.m; path = ../../Classes/ios/WCFastCellCommon.m; sourceTree = "<group>"; };
 		C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomString.h"; sourceTree = "<group>"; };
 		C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomString.m"; sourceTree = "<group>"; };
 		C98A27B0188FFB67009FCD18 /* WCFastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCell.h; path = ../../Classes/ios/WCFastCell.h; sourceTree = "<group>"; };
@@ -197,7 +206,13 @@
 			children = (
 				C98A27B0188FFB67009FCD18 /* WCFastCell.h */,
 				C98A27B1188FFB67009FCD18 /* WCFastCell.m */,
+				C918DD731897B70D00621806 /* WCFastCollectionViewCell.h */,
+				C918DD741897B70D00621806 /* WCFastCollectionViewCell.m */,
+				C918DD761897B7CA00621806 /* WCFastCellDrawingLayerDelegate.h */,
+				C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */,
 				C98A27B2188FFB67009FCD18 /* WCFastCell+PrivateAdditions.h */,
+				C918DD7E1897BA3400621806 /* WCFastCellCommon.h */,
+				C918DD7F1897BA3400621806 /* WCFastCellCommon.m */,
 				C98A27B3188FFB67009FCD18 /* WCFCImageView.h */,
 				C98A27B4188FFB67009FCD18 /* WCFCImageView.m */,
 				C98A27B5188FFB67009FCD18 /* WCFCLabel.h */,
@@ -307,17 +322,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C918DD751897B70D00621806 /* WCFastCollectionViewCell.m in Sources */,
 				C9E9D1F2188EC15E007EC932 /* WCTestViewController.m in Sources */,
 				C9E9D1AE188EB98F007EC932 /* TestAppDelegate.m in Sources */,
 				C9E9D1AA188EB98F007EC932 /* main.m in Sources */,
 				C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */,
 				C9E9D1EF188EC14D007EC932 /* TestCellViewController.m in Sources */,
+				C918DD781897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m in Sources */,
 				C98A27BC188FFB67009FCD18 /* WCFCObject.m in Sources */,
 				C98A27BB188FFB67009FCD18 /* WCFCLabel.m in Sources */,
 				C9E9D1B4188EB98F007EC932 /* TestMasterViewController.m in Sources */,
 				C9E9D1E8188EBB2C007EC932 /* TestCell.m in Sources */,
 				C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */,
 				C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */,
+				C918DD801897BA3400621806 /* WCFastCellCommon.m in Sources */,
 				C9E9D1EC188EBFB9007EC932 /* WCTestCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

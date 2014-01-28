@@ -7,11 +7,15 @@
 //
 
 #import "WCFastCell.h"
+#import "WCFastCellDrawingLayerDelegate.h"
 
 @protocol WCFastCellPrivateAdditions <NSObject>
+
+@property (nonatomic, strong, readonly) CALayer *drawingLayer;
+@property (nonatomic, strong, readonly) NSMutableSet *mutableObjects;
+@property (nonatomic, strong, readonly) WCFastCellDrawingLayerDelegate *layerDelegate;
+
 -(void) removeOccurenciesOfWCObjectsInView:(UIView *) view;
--(NSSet *) objectsForLayer:(CALayer *)layer;
--(WCFastCellDrawingLayerDelegate *) layerDelegate;
 @end
 
 @interface UIView (WCFCObject)

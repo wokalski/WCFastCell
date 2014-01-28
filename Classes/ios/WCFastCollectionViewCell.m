@@ -1,38 +1,29 @@
 //
-//  WCFastCell.m
-//  Cloudy
+//  WCFastCollectionViewCell.m
+//  WCFastCellTest
 //
-//  Created by Wojciech Czekalski on 25.11.2013.
-//  Copyright (c) 2013 Wojciech Czekalski. All rights reserved.
+//  Created by Wojciech Czekalski on 28.01.2014.
+//  Copyright (c) 2014 Wojciech Czekalski. All rights reserved.
 //
 
-#import "WCFastCell.h"
+#import "WCFastCollectionViewCell.h"
 #import "WCFastCell+PrivateAdditions.h"
 
-@interface WCFastCell () <WCFastCellPrivateAdditions>
+@interface WCFastCollectionViewCell () <WCFastCellPrivateAdditions>
 @end
 
-@implementation WCFastCell {
+@implementation WCFastCollectionViewCell {
     WCFastCellDrawingLayerDelegate *_layerDelegate;
-    NSMutableSet *_mutableObjects;
     CALayer *_drawingLayer;
+    NSMutableSet *_mutableObjects;
 }
 
 #pragma mark - Initializing
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayRefreshNeeded:) name:@"wcfc_displayNeeded" object:nil];
-    }
-    return self;
-}
-
 -(instancetype) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-
+        
     }
     return self;
 }
@@ -49,6 +40,7 @@
     self = [super init];
     
     if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayRefreshNeeded:) name:@"wcfc_displayNeeded" object:nil];
     }
     return self;
 }
@@ -75,7 +67,7 @@
 -(void) awakeFromNib {
     [self removeOccurenciesOfWCObjectsInView:self.contentView];
     self.drawingLayer.delegate = [self layerDelegate];
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayRefreshNeeded:) name:@"wcfc_displayNeeded" object:nil];
     
     [self.contentView.layer addSublayer:self.drawingLayer];
@@ -119,6 +111,13 @@
 
 #pragma mark - Lazy loading
 
+-(NSMutableSet *) mutableObjects {
+    if (!_mutableObjects) {
+        _mutableObjects = [NSMutableSet set];
+    }
+    return _mutableObjects;
+}
+
 -(WCFastCellDrawingLayerDelegate *) layerDelegate {
     if (!_layerDelegate) {
         _layerDelegate = [[WCFastCellDrawingLayerDelegate alloc] init];
@@ -136,13 +135,6 @@
         _drawingLayer = drawingLayer;
     }
     return _drawingLayer;
-}
-
--(NSMutableSet *) mutableObjects {
-    if (!_mutableObjects) {
-        _mutableObjects = [NSMutableSet set];
-    }
-    return _mutableObjects;
 }
 
 -(NSSet *) objects {
