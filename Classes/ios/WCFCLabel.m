@@ -52,12 +52,12 @@
         NSDictionary *attributes = @{NSFontAttributeName: self.font, NSForegroundColorAttributeName : self.textColor, NSParagraphStyleAttributeName : self.paragraphStyle};
     
     [self.text drawInRect:self.frame withAttributes:attributes];
-    }
+    
 #else
     [self.textColor set];
     [self.text drawInRect:self.frame withFont:self.font lineBreakMode:[self.paragraphStyle lineBreakMode] alignment:[self.paragraphStyle alignment]];
 #endif
-    
+    }
     CGContextRestoreGState(ctx);
 }
 
