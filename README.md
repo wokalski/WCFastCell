@@ -5,9 +5,7 @@
 * `UICollectionView` support
 
 ==========
-#####Cocoa pods
-<pre><code> pod 'WCFastCell'
-</code></pre>
+
 
 ###What it is?
 WCFastCell is a drop in replacement for UITableViewCell & UICollectionViewCells. It draws subviews' contents (either UILabels or UIImageViews) on a single layer. Thanks to that UITableViews & UICollectionViews scroll more smoothly. It can be especially useful on older devices.
