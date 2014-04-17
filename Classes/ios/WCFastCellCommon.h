@@ -21,4 +21,4 @@
 
 @end
 
-FOUNDATION_EXTERN_INLINE BOOL WCFCExchangeUIViewToCellObject(UIView *view, id<WCFastCellCommon> cell);
+FOUNDATION_EXPORT BOOL WCFCExchangeUIViewToCellObject(UIView *view, id<WCFastCellCommon> cell);
