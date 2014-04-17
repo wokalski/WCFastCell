@@ -1,9 +1,9 @@
 WCFastCell
 ==========
-
 ###What's new
 
-* UICollectionView support
+####Version 1.1
+* `UICollectionView` support
 
 ==========
 #####Cocoa pods
@@ -40,5 +40,3 @@ WCFastCell is free and open source code, licensed under MIT. See LICENSE for ful
 ### About me
 
 [Twitter: @wczekalski](http://twitter.com/wczekalski)
-
-[Blog - Code Maverick](http://blog.wczekalski.com)
