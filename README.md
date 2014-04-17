@@ -1,4 +1,6 @@
 ##WCFastCell
+<pre><code> pod 'WCFastCell'
+</code></pre>
 ###What's new
 
 ####Version 1.1
