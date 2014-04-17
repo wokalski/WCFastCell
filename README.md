@@ -14,8 +14,8 @@ WCFastCell
 WCFastCell is a drop in replacement for UITableViewCell & UICollectionViewCells. It draws subviews' contents (either UILabels or UIImageViews) on a single layer. Thanks to that UITableViews & UICollectionViews scroll more smoothly. It can be especially useful on older devices.
 
 #### UITableViewCells vs WCFastCells
-<img src="/README resources/UITableViewCell.tiff" height="500px">
-<img src="/README resources/WCFastCell.png" height="500px">
+<img src="/README%20resources/UITableViewCell.tiff" height="500px">
+<img src="/README%20resources/WCFastCell.png" height="500px">
 
 ![](/README\ resources/Performance\ difference.png)
 
