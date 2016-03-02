@@ -7,12 +7,19 @@
 //
 
 #import "TestAppDelegate.h"
+#import "WCFrameRateViewController.h"
 
 @implementation TestAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    WCFrameRateViewController *frameRate = [WCFrameRateViewController new];
+    frameRate.view.frame = CGRectMake(0, 20, 90, 30);
+    frameRate.view.backgroundColor = [UIColor redColor];
+    frameRate.view.layer.zPosition = MAXFLOAT;
+    [self.window addSubview:frameRate.view];
+
     return YES;
 }
 							

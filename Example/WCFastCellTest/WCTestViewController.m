@@ -16,32 +16,6 @@
 
 @implementation WCTestViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -61,12 +35,9 @@
     static NSString *CellIdentifier = @"Cell";
     WCTestCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.label1.text = [NSString randomStringWithLength:10];
-    cell.label2.text = [NSString randomStringWithLength:10];
-    cell.label3.text = [NSString randomStringWithLength:10];
-    cell.label4.text = [NSString randomStringWithLength:10];
-    cell.label5.text = [NSString randomStringWithLength:10];
-    cell.label6.text = [NSString randomStringWithLength:10];
+    for (UILabel *label in cell.labels) {
+        label.text = [NSString randomStringWithLength:10];
+    }
     
     return cell;
 }
