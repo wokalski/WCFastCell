@@ -1,10 +1,10 @@
-##WCFastCell
-<pre><code> pod 'WCFastCell'
-</code></pre>
-###What's new
+#This project is no longer maintained
 
-####Version 1.1
-* `UICollectionView` support
+This project will not do any good for your application. GPUs are good at composition, and drawing in `drawRect:` is extremely inefficient.
+
+**Please do not use it**
+
+I also updated the test project so that you can see how inefficient it is :).
 
 ==========
 
@@ -26,11 +26,6 @@ If you need to animate cell's contents you should not use WCFastCell, but in oth
 #####Device: iPhone 4
 ###### UITableViewCells: ~35 FPS
 ###### WCFastCells: ~60 FPS
-###### Checkout the Sample project for more information.
-
-
-### How to use it?
-Just change the class of your UITableViewCell (or it's subclass) to WCFastCell (or set WCFastCell as a base class accordingly).
 
 ###License
 Copyright (c) 2013-2014 Wojciech Czekalski. All rights reserved.
