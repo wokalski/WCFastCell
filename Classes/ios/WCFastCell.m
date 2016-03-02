@@ -66,14 +66,14 @@
     [super setValue:value forKey:key];
 }
 
--(void) removeOccurenciesOfWCObjectsInView:(UIView *)view {
+-(void) exchangeSubviewsToWCObjects:(UIView *)view {
     for (UIView *subView in view.subviews) {
         WCFCExchangeUIViewToCellObject(subView, self);
     }
 }
 
 -(void) awakeFromNib {
-    [self removeOccurenciesOfWCObjectsInView:self.contentView];
+    [self exchangeSubviewsToWCObjects:self.contentView];
     self.drawingLayer.delegate = [self layerDelegate];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayRefreshNeeded:) name:@"wcfc_displayNeeded" object:nil];

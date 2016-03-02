@@ -11,6 +11,7 @@
 		C918DD781897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */; };
 		C918DD801897BA3400621806 /* WCFastCellCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD7F1897BA3400621806 /* WCFastCellCommon.m */; };
 		C964AE451C8786F6008D3D99 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */; };
+		C964AE4B1C8789E3008D3D99 /* WCFrameRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C964AE4A1C8789E3008D3D99 /* WCFrameRateViewController.m */; };
 		C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */; };
 		C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B1188FFB67009FCD18 /* WCFastCell.m */; };
 		C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B4188FFB67009FCD18 /* WCFCImageView.m */; };
@@ -23,7 +24,6 @@
 		C9E9D1AA188EB98F007EC932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9D1A9188EB98F007EC932 /* main.m */; };
 		C9E9D1AE188EB98F007EC932 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9D1AD188EB98F007EC932 /* TestAppDelegate.m */; };
 		C9E9D1B1188EB98F007EC932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E9D1AF188EB98F007EC932 /* Main.storyboard */; };
-		C9E9D1B4188EB98F007EC932 /* TestMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9D1B3188EB98F007EC932 /* TestMasterViewController.m */; };
 		C9E9D1B9188EB98F007EC932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E9D1B8188EB98F007EC932 /* Images.xcassets */; };
 		C9E9D1C0188EB990007EC932 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9D1BF188EB990007EC932 /* XCTest.framework */; };
 		C9E9D1C1188EB990007EC932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9D19D188EB98F007EC932 /* Foundation.framework */; };
@@ -55,6 +55,8 @@
 		C918DD7E1897BA3400621806 /* WCFastCellCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCellCommon.h; path = ../../Classes/ios/WCFastCellCommon.h; sourceTree = "<group>"; };
 		C918DD7F1897BA3400621806 /* WCFastCellCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCellCommon.m; path = ../../Classes/ios/WCFastCellCommon.m; sourceTree = "<group>"; };
 		C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C964AE491C8789E2008D3D99 /* WCFrameRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFrameRateViewController.h; sourceTree = "<group>"; };
+		C964AE4A1C8789E3008D3D99 /* WCFrameRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFrameRateViewController.m; sourceTree = "<group>"; };
 		C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomString.h"; sourceTree = "<group>"; };
 		C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomString.m"; sourceTree = "<group>"; };
 		C98A27B0188FFB67009FCD18 /* WCFastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCell.h; path = ../../Classes/ios/WCFastCell.h; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		C9E9D1AC188EB98F007EC932 /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
 		C9E9D1AD188EB98F007EC932 /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
 		C9E9D1B0188EB98F007EC932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C9E9D1B2188EB98F007EC932 /* TestMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasterViewController.h; sourceTree = "<group>"; };
-		C9E9D1B3188EB98F007EC932 /* TestMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasterViewController.m; sourceTree = "<group>"; };
 		C9E9D1B8188EB98F007EC932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9E9D1BE188EB990007EC932 /* WCFastCellTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCFastCellTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E9D1BF188EB990007EC932 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -156,8 +156,6 @@
 				C9E9D1AD188EB98F007EC932 /* TestAppDelegate.m */,
 				C9E9D1AF188EB98F007EC932 /* Main.storyboard */,
 				C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */,
-				C9E9D1B2188EB98F007EC932 /* TestMasterViewController.h */,
-				C9E9D1B3188EB98F007EC932 /* TestMasterViewController.m */,
 				C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */,
 				C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */,
 				C9E9D1ED188EC14D007EC932 /* TestCellViewController.h */,
@@ -168,6 +166,8 @@
 				C9E9D1E7188EBB2C007EC932 /* TestCell.m */,
 				C9E9D1E9188EBF89007EC932 /* WCTestCell.h */,
 				C9E9D1EB188EBFB9007EC932 /* WCTestCell.m */,
+				C964AE491C8789E2008D3D99 /* WCFrameRateViewController.h */,
+				C964AE4A1C8789E3008D3D99 /* WCFrameRateViewController.m */,
 				C9E9D1E5188EBAF9007EC932 /* WCFastCell */,
 				C9E9D1B8188EB98F007EC932 /* Images.xcassets */,
 				C9E9D1A4188EB98F007EC932 /* Supporting Files */,
@@ -329,13 +329,13 @@
 				C918DD751897B70D00621806 /* WCFastCollectionViewCell.m in Sources */,
 				C9E9D1F2188EC15E007EC932 /* WCTestViewController.m in Sources */,
 				C9E9D1AE188EB98F007EC932 /* TestAppDelegate.m in Sources */,
+				C964AE4B1C8789E3008D3D99 /* WCFrameRateViewController.m in Sources */,
 				C9E9D1AA188EB98F007EC932 /* main.m in Sources */,
 				C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */,
 				C9E9D1EF188EC14D007EC932 /* TestCellViewController.m in Sources */,
 				C918DD781897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m in Sources */,
 				C98A27BC188FFB67009FCD18 /* WCFCObject.m in Sources */,
 				C98A27BB188FFB67009FCD18 /* WCFCLabel.m in Sources */,
-				C9E9D1B4188EB98F007EC932 /* TestMasterViewController.m in Sources */,
 				C9E9D1E8188EBB2C007EC932 /* TestCell.m in Sources */,
 				C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */,
 				C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */,
