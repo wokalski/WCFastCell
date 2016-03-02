@@ -10,6 +10,7 @@
 		C918DD751897B70D00621806 /* WCFastCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD741897B70D00621806 /* WCFastCollectionViewCell.m */; };
 		C918DD781897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */; };
 		C918DD801897BA3400621806 /* WCFastCellCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C918DD7F1897BA3400621806 /* WCFastCellCommon.m */; };
+		C964AE451C8786F6008D3D99 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */; };
 		C96FFBFC188EC4ED0075A1EF /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */; };
 		C98A27B9188FFB67009FCD18 /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B1188FFB67009FCD18 /* WCFastCell.m */; };
 		C98A27BA188FFB67009FCD18 /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A27B4188FFB67009FCD18 /* WCFCImageView.m */; };
@@ -53,6 +54,7 @@
 		C918DD771897B7CA00621806 /* WCFastCellDrawingLayerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCellDrawingLayerDelegate.m; path = ../../Classes/ios/WCFastCellDrawingLayerDelegate.m; sourceTree = "<group>"; };
 		C918DD7E1897BA3400621806 /* WCFastCellCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCellCommon.h; path = ../../Classes/ios/WCFastCellCommon.h; sourceTree = "<group>"; };
 		C918DD7F1897BA3400621806 /* WCFastCellCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFastCellCommon.m; path = ../../Classes/ios/WCFastCellCommon.m; sourceTree = "<group>"; };
+		C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomString.h"; sourceTree = "<group>"; };
 		C96FFBFB188EC4ED0075A1EF /* NSString+RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomString.m"; sourceTree = "<group>"; };
 		C98A27B0188FFB67009FCD18 /* WCFastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFastCell.h; path = ../../Classes/ios/WCFastCell.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				C9E9D1AC188EB98F007EC932 /* TestAppDelegate.h */,
 				C9E9D1AD188EB98F007EC932 /* TestAppDelegate.m */,
 				C9E9D1AF188EB98F007EC932 /* Main.storyboard */,
+				C964AE441C8786F6008D3D99 /* Launch Screen.storyboard */,
 				C9E9D1B2188EB98F007EC932 /* TestMasterViewController.h */,
 				C9E9D1B3188EB98F007EC932 /* TestMasterViewController.m */,
 				C96FFBFA188EC4ED0075A1EF /* NSString+RandomString.h */,
@@ -303,6 +306,7 @@
 				C9E9D1EA188EBF89007EC932 /* WCTestCell.h in Resources */,
 				C9E9D1B9188EB98F007EC932 /* Images.xcassets in Resources */,
 				C9E9D1A8188EB98F007EC932 /* InfoPlist.strings in Resources */,
+				C964AE451C8786F6008D3D99 /* Launch Screen.storyboard in Resources */,
 				C9E9D1B1188EB98F007EC932 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WCFastCellTest/WCFastCellTest-Prefix.pch";
@@ -469,6 +473,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "WCFastCellTest/WCFastCellTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -479,7 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WCFastCellTest/WCFastCellTest-Prefix.pch";
@@ -488,6 +493,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "WCFastCellTest/WCFastCellTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
